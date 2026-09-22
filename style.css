@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: archivo;
+  src: url(fonts/ArchivoBlack-Regular.ttf);
+}
+
+@font-face {
+  font-family: allerta;
+  src: url(fonts/AllertaStencil-Regular.ttf);
+}
+
+.bau {
+  font-family: archivo;
+}
+
+.allerta {
+  font-family: allerta;
+}
+
+body {
+  margin: 0;
+  font-family: Georgia, 'Times New Roman', serif;
+}
+
+.menu-header {
+  background: #ece5da;
+  color: #3ea85b;
+  text-align: left;
+  padding: 3rem 1rem;
+  border: 20px solid #3ea85b;
+}
+
+.menu-header h1 {
+  margin: 0 0 0 400px;
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  letter-spacing: 0.05em;
+}
+
+.page {
+  display: flex;
+}
+
+.sidebar {
+  width: 350px;
+  flex-shrink: 0;
+  background: #ece5da;
+  color: #3ea85b;
+  padding: 50px 25px;
+  height: 100vh;
+  overflow-y: auto;
+  position: sticky;
+  top: 0;
+}
+
+.sidebar h2 {
+  font-size: 1.8rem;
+  margin: 0 0 1rem;
+}
+
+.sidebar h4 {
+  margin: 1.5rem 0 0.5rem;
+}
+
+.tagline {
+  font-style: italic;
+  font-size: 40px;
+  margin: 0 0 0 800px;
+}
+
+.sidebar-gif {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  display: block;
+  margin: 1rem 0 0.5rem;
+  border-radius: 6px;
+}
+
+.collage {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 2rem;
+  flex: 1;
+  align-items: center;
+  background: #ece5da;
+}
+
+.collage figure {
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 1.25rem;
+  border: 15px solid #3ea85b;
+  background: #ece5da;
+  break-inside: avoid;
+}
+
+.collage figure > img,
+.collage figure > video {
+  width: 220px;
+  flex-shrink: 0;
+  height: auto;
+  display: block;
+}
+
+.collage figure .text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  font-family: archivo;
+}
+
+.collage figcaption {
+  font-size: 1.8rem;
+  font-family: Georgia, serif;
+  color: #3ea85b;
+  line-height: 1.15;
+  margin: 0 0 0.6rem;
+}
+
+.collage .note {
+  font-size: 20px;
+  line-height: 1.6;
+  color: #3ea85b;
+  margin: 0;
+  max-width: 40ch;
+  font-family: allerta;
+}
+
+.horizontal img,
+.horizontal video {
+  width: 500px !important;
+  height: auto;
+}
+
+@media (max-width: 1000px) {
+  .collage figure {
+    flex-direction: column;
+  }
+  .collage figure > img,
+  .collage figure > video,
+  .horizontal img,
+  .horizontal video {
+    width: 100%;
+  }
+}
+
+@media (max-width: 700px) {
+  .page {
+    flex-direction: column;
+  }
+  .sidebar {
+    height: auto;
+    position: static;
+  }
+}

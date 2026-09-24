@@ -12,6 +12,15 @@
   src: url(fonts/AllertaStencil-Regular.ttf);
 }
 
+@font-face {
+  font-family: poppin;
+  src: url(fonts/Poppins-SemiBold.ttf);
+}
+
+.poppin{
+  font-family: poppin;
+}
+
 .bau {
   font-family: archivo;
 }
@@ -131,7 +140,7 @@ body {
   color: #3ea85b;
   margin: 0;
   max-width: 40ch;
-  font-family: allerta;
+  font-family: poppin;
 }
 
 .horizontal img,

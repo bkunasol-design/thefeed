@@ -9,6 +9,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: url(vids-and-imgs/1x/beanpointcursor.png),auto;
 }
 
 .open {

@@ -32,6 +32,7 @@
 body {
   margin: 0;
   font-family: Georgia, 'Times New Roman', serif;
+  cursor: url(vids-and-imgs/1x/beanpointcursor.png),auto;
 }
 
 .menu-header {
@@ -49,7 +50,7 @@ body {
 }
 
 .page {
-  display: flex;
+  display: flex;  
 }
 
 .sidebar {
